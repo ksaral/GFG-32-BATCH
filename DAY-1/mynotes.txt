@@ -1,0 +1,5 @@
+Link to github repo: https://github.com/hkshitesh/GFG-32-BATCH
+
+Q> how can we find or list users and user groups?
+cat /etc/passwd 
+cat /etc/group
