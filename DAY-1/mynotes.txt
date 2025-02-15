@@ -3,3 +3,30 @@ Link to github repo: https://github.com/hkshitesh/GFG-32-BATCH
 Q> how can we find or list users and user groups?
 cat /etc/passwd 
 cat /etc/group
+
+Q> How to sync up a forked repository from its original repository?
+Step 1: Add the original repository as a remote:
+
+git remote add upstream https://github.com/original-owner/repository.git
+
+Step 2: Fetch the changes from the original repository:
+
+git fetch upstream
+
+Step 3: Merge the changes into your local branch:
+
+git checkout main  # or the branch you want to merge into
+git merge upstream/main
+
+Step 4: Push the changes to your forked repository:
+
+git push origin main  # or the branch you're working on
+
+Q> how to add all unstaged files to index in git?
+
+for adding changes in current directory
+git add .
+
+for adding changes from the entire repository (This will ensure all changes (new, modified, and deleted files) are added to the staging area.)
+git add --all
+
